@@ -80,134 +80,124 @@
 {% endfor %}
 </div>
 
-    <div class="column">
-      <div class="card">
-        <b id="docs-internal-guid-6bf40e90-7fff-0f29-266c-2611e78b6b93"
-          ><img height="150" src="INSERT_IMAGE" vspace="12" width="115"
-        /></b>
-        <div>
-          <span style="font-size: 16px"
-            ><b
-              ><span style="color: rgb(0, 0, 0)"
-                ><strong>First Last</strong></span
-              ></b
-            ></span
-          >
-        </div>
-        <div class="caption">
-          <span style="font-size: 12px"
-            ><font color="#000000"
+      <div class="column">
+        {% for participant in site.data.column1 %}
+        <div class="card">
+          <b id="docs-internal-guid-6bf40e90-7fff-0f29-266c-2611e78b6b93"
+            ><img height="150" src="{{participant.image}}" vspace="12" width="115"
+          /></b>
+          <div>
+            <span style="font-size: 16px"
               ><b
-                >Long sentence about already getting covid vaccination.</b
-              ></font
-            ></span
-          >
+                ><span style="color: rgb(0, 0, 0)"
+                  ><strong>{{participant.first_name}}</strong></span
+                ></b
+              ></span
+            >
+          </div>
+          <div class="caption">
+            <span style="font-size: 12px"
+              ><font color="#000000"
+                ><b
+                  >{{participant.statement}}</b
+                ></font
+              ></span
+            >
+          </div>
         </div>
+
+  {% endfor %}
+  </div>
+
+  <div class="column">
+    {% for participant in site.data.column1 %}
+    <div class="card">
+      <b id="docs-internal-guid-6bf40e90-7fff-0f29-266c-2611e78b6b93"
+        ><img height="150" src="{{participant.image}}" vspace="12" width="115"
+      /></b>
+      <div>
+        <span style="font-size: 16px"
+          ><b
+            ><span style="color: rgb(0, 0, 0)"
+              ><strong>{{participant.first_name}}</strong></span
+            ></b
+          ></span
+        >
+      </div>
+      <div class="caption">
+        <span style="font-size: 12px"
+          ><font color="#000000"
+            ><b
+              >{{participant.statement}}</b
+            ></font
+          ></span
+        >
       </div>
     </div>
 
-    <div class="column">
-      <div class="card">
-        <b id="docs-internal-guid-6bf40e90-7fff-0f29-266c-2611e78b6b93"
-          ><img height="150" src="INSERT_IMAGE" vspace="12" width="115"
-        /></b>
-        <div>
-          <span style="font-size: 16px"
-            ><b
-              ><span style="color: rgb(0, 0, 0)"
-                ><strong>First Last</strong></span
-              ></b
-            ></span
-          >
-        </div>
-        <div class="caption">
-          <span style="font-size: 12px"
-            ><font color="#000000"
-              ><b
-                >Long sentence about already getting covid vaccination.</b
-              ></font
-            ></span
-          >
-        </div>
-      </div>
+{% endfor %}
+</div>
+
+<div class="column">
+  {% for participant in site.data.column1 %}
+  <div class="card">
+    <b id="docs-internal-guid-6bf40e90-7fff-0f29-266c-2611e78b6b93"
+      ><img height="150" src="{{participant.image}}" vspace="12" width="115"
+    /></b>
+    <div>
+      <span style="font-size: 16px"
+        ><b
+          ><span style="color: rgb(0, 0, 0)"
+            ><strong>{{participant.first_name}}</strong></span
+          ></b
+        ></span
+      >
     </div>
-
-    <div class="column">
-      <div class="card">
-        <b id="docs-internal-guid-6bf40e90-7fff-0f29-266c-2611e78b6b93"
-          ><img height="150" src="INSERT_IMAGE" vspace="12" width="115"
-        /></b>
-        <div>
-          <span style="font-size: 16px"
-            ><b
-              ><span style="color: rgb(0, 0, 0)"
-                ><strong>First Last</strong></span
-              ></b
-            ></span
-          >
-        </div>
-        <div class="caption">
-          <span style="font-size: 12px"
-            ><font color="#000000"
-              ><b
-                >Long sentence about already getting covid vaccination.</b
-              ></font
-            ></span
-          >
-        </div>
-      </div>
-
-      <div class="card">
-        <b id="docs-internal-guid-6bf40e90-7fff-0f29-266c-2611e78b6b93"
-          ><img height="150" src="INSERT_IMAGE" vspace="12" width="115"
-        /></b>
-        <div>
-          <span style="font-size: 16px"
-            ><b
-              ><span style="color: rgb(0, 0, 0)"
-                ><strong>First Last</strong></span
-              ></b
-            ></span
-          >
-        </div>
-        <div class="caption">
-          <span style="font-size: 12px"
-            ><font color="#000000"
-              ><b
-                >Long sentence about already getting covid vaccination.</b
-              ></font
-            ></span
-          >
-        </div>
-      </div>
-    </div>
-
-    <div class="column">
-      <div class="card">
-        <b id="docs-internal-guid-6bf40e90-7fff-0f29-266c-2611e78b6b93"
-          ><img height="150" src="INSERT_IMAGE" vspace="12" width="115"
-        /></b>
-        <div>
-          <span style="font-size: 16px"
-            ><b
-              ><span style="color: rgb(0, 0, 0)"
-                ><strong>First Last</strong></span
-              ></b
-            ></span
-          >
-        </div>
-        <div class="caption">
-          <span style="font-size: 12px"
-            ><font color="#000000"
-              ><b
-                >Long sentence about already getting covid vaccination.</b
-              ></font
-            ></span
-          >
-        </div>
-      </div>
+    <div class="caption">
+      <span style="font-size: 12px"
+        ><font color="#000000"
+          ><b
+            >{{participant.statement}}</b
+          ></font
+        ></span
+      >
     </div>
   </div>
+
+{% endfor %}
+</div>
+
+<div class="column">
+  {% for participant in site.data.column1 %}
+  <div class="card">
+    <b id="docs-internal-guid-6bf40e90-7fff-0f29-266c-2611e78b6b93"
+      ><img height="150" src="{{participant.image}}" vspace="12" width="115"
+    /></b>
+    <div>
+      <span style="font-size: 16px"
+        ><b
+          ><span style="color: rgb(0, 0, 0)"
+            ><strong>{{participant.first_name}}</strong></span
+          ></b
+        ></span
+      >
+    </div>
+    <div class="caption">
+      <span style="font-size: 12px"
+        ><font color="#000000"
+          ><b
+            >{{participant.statement}}</b
+          ></font
+        ></span
+      >
+    </div>
+  </div>
+
+{% endfor %}
+</div>
+
+</div>
+
 </html>
 
 <!--
