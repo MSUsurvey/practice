@@ -1,0 +1,221 @@
+---
+---
+
+<html>
+  <head>
+    <title>Publicly Shared Effort</title>
+  </head>
+
+  <style type="text/css">
+    body {
+      font-family: Trebuchet MS, Helvetica, sans-serif;
+    }
+
+    .flex-container {
+      display: flex;
+      padding: 5px;
+      justify-content: center;
+    }
+    .flex-container > div {
+      margin: 9px;
+    }
+    .toptitle {
+      margin: 20px;
+      text-align: center;
+    }
+
+    .column {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card {
+      width: 175px;
+      height: 285px;
+      background-color: #deebf6;
+      border: 1px solid rgb(0, 0, 0);
+      text-align: center;
+    }
+
+    .caption {
+      padding: 5px;
+    }
+  </style>
+
+  <div class="toptitle">
+    <span style="font-size: 30px"
+      ><font color="#000000"
+        >Ranking and Contribution of Publicly Shared Efforts</font
+      ></span
+    >
+  </div>
+
+  <div class="flex-container">
+    <div class="column">
+      {% for participant in site.data.column1 %}
+      <div class="card">
+        <b id="docs-internal-guid-6bf40e90-7fff-0f29-266c-2611e78b6b93"
+          ><img height="150" src="{{participant.image}}" vspace="12" width="115"
+        /></b>
+        <div>
+          <span style="font-size: 16px"
+            ><b
+              ><span style="color: rgb(0, 0, 0)"
+                ><strong>{{participant.first_name}}</strong></span
+              ></b
+            ></span
+          >
+        </div>
+        <div class="caption">
+          <span style="font-size: 12px"
+            ><font color="#000000"
+              ><b
+                >{{participant.statement}}</b
+              ></font
+            ></span
+          >
+        </div>
+      </div>
+
+{% endfor %}
+</div>
+
+    <div class="column">
+      <div class="card">
+        <b id="docs-internal-guid-6bf40e90-7fff-0f29-266c-2611e78b6b93"
+          ><img height="150" src="INSERT_IMAGE" vspace="12" width="115"
+        /></b>
+        <div>
+          <span style="font-size: 16px"
+            ><b
+              ><span style="color: rgb(0, 0, 0)"
+                ><strong>First Last</strong></span
+              ></b
+            ></span
+          >
+        </div>
+        <div class="caption">
+          <span style="font-size: 12px"
+            ><font color="#000000"
+              ><b
+                >Long sentence about already getting covid vaccination.</b
+              ></font
+            ></span
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <b id="docs-internal-guid-6bf40e90-7fff-0f29-266c-2611e78b6b93"
+          ><img height="150" src="INSERT_IMAGE" vspace="12" width="115"
+        /></b>
+        <div>
+          <span style="font-size: 16px"
+            ><b
+              ><span style="color: rgb(0, 0, 0)"
+                ><strong>First Last</strong></span
+              ></b
+            ></span
+          >
+        </div>
+        <div class="caption">
+          <span style="font-size: 12px"
+            ><font color="#000000"
+              ><b
+                >Long sentence about already getting covid vaccination.</b
+              ></font
+            ></span
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <b id="docs-internal-guid-6bf40e90-7fff-0f29-266c-2611e78b6b93"
+          ><img height="150" src="INSERT_IMAGE" vspace="12" width="115"
+        /></b>
+        <div>
+          <span style="font-size: 16px"
+            ><b
+              ><span style="color: rgb(0, 0, 0)"
+                ><strong>First Last</strong></span
+              ></b
+            ></span
+          >
+        </div>
+        <div class="caption">
+          <span style="font-size: 12px"
+            ><font color="#000000"
+              ><b
+                >Long sentence about already getting covid vaccination.</b
+              ></font
+            ></span
+          >
+        </div>
+      </div>
+
+      <div class="card">
+        <b id="docs-internal-guid-6bf40e90-7fff-0f29-266c-2611e78b6b93"
+          ><img height="150" src="INSERT_IMAGE" vspace="12" width="115"
+        /></b>
+        <div>
+          <span style="font-size: 16px"
+            ><b
+              ><span style="color: rgb(0, 0, 0)"
+                ><strong>First Last</strong></span
+              ></b
+            ></span
+          >
+        </div>
+        <div class="caption">
+          <span style="font-size: 12px"
+            ><font color="#000000"
+              ><b
+                >Long sentence about already getting covid vaccination.</b
+              ></font
+            ></span
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <b id="docs-internal-guid-6bf40e90-7fff-0f29-266c-2611e78b6b93"
+          ><img height="150" src="INSERT_IMAGE" vspace="12" width="115"
+        /></b>
+        <div>
+          <span style="font-size: 16px"
+            ><b
+              ><span style="color: rgb(0, 0, 0)"
+                ><strong>First Last</strong></span
+              ></b
+            ></span
+          >
+        </div>
+        <div class="caption">
+          <span style="font-size: 12px"
+            ><font color="#000000"
+              ><b
+                >Long sentence about already getting covid vaccination.</b
+              ></font
+            ></span
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</html>
+
+<!--
+
+<div style="width: 175px; height: 300px; background-color: #DEEBF6; border: 1px solid rgb(0, 0, 0); text-align: center;"><b id="docs-internal-guid-6bf40e90-7fff-0f29-266c-2611e78b6b93"><img height="150" src="INSERT_IMAGE" vspace="12" width="115"></b>
+<div><span style="font-family:Trebuchet MS,Helvetica,sans-serif;"><span style="font-size:16px;"><b><span style="color: rgb(0, 0, 0);"><strong>First</strong></span></b></span></span></div><div><span style="font-family:Trebuchet MS,Helvetica,sans-serif;"><span style="font-size:16px;"><b><span style="color: rgb(0, 0, 0);"><strong>Last</strong></span></b></span></span></div>
+<div><span style="font-family:Trebuchet MS,Helvetica,sans-serif;"><span style="font-size:19px;"><b id="docs-internal-guid-6594a1a5-7fff-bbf5-4f3b-4b27f53bfde0"><span style="color: rgb(0, 0, 0);"><strong>Points</strong>: </span><span id="pcount" style="color: rgb(0, 0, 0);">0</span></b><br>
+<b><span style="color: rgb(0, 0, 0);">Donation: $</span><span id="dcount" style="color: rgb(0, 0, 0);">0.00</span></b></span></span></div>
+<div><span style="font-family:Trebuchet MS,Helvetica,sans-serif;"><span style="font-size:19px;"><font color="#000000"><b>Rank: 1/27</b></font></span></span></div></div>
+
+-->
