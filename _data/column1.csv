@@ -1,6 +1,5 @@
 first_name,image,statement
-"Test","{{site.url}}", "TEST"
-"Robert","/images/0AFB7A96_39D0_4365_99BF_631657F2773B.jpeg","I already got my COVID-19 vaccination"
+"Robert","http://MSUsurvey/practice/images/0AFB7A96_39D0_4365_99BF_631657F2773B.jpeg","I already got my COVID-19 vaccination"
 "Mikayla","/images/IMG_0920.jpeg","I already got my COVID-19 vaccination"
 "Gabriella","/images/Screenshot_20210321_204144_Snapchat.jpg","I already got my COVID-19 vaccination"
 "Beatrix","/images/B2AE9B35_8877_4231_8BF5_22082CFBD863.JPG","I already got my COVID-19 vaccination"
