@@ -35,7 +35,6 @@
       background-color: #e6e8eb;
       border: 1px solid rgb(0, 0, 0);
       text-align: center;
-      padding:5px;
     }
 
     .caption {
@@ -79,7 +78,7 @@
     <div class="column">
       {% assign column_key = "column" | append: i %} {% for participant in
       site.data[column_key] %}
-      <div class="card" style="border: 2px solid {{participant.color}}">
+      <div class="card" style="border: 2px solid {{participant.color}}" vspace="12">
         <b id="docs-internal-guid-6bf40e90-7fff-0f29-266c-2611e78b6b93"
           ><img
             class="photo"
