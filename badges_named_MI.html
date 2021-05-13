@@ -74,7 +74,7 @@
         <div>
           <span style="font-size: 16px"
             ><b
-              ><span style="color: rgb(0, 0, 0)"
+              ><span style="color: {{participant.color}}"
                 ><strong>{{participant.first_name}}</strong></span
               ></b
             ></span
@@ -82,10 +82,10 @@
         </div>
         <div class="caption">
           <span style="font-size: 14.5px"
-            ><font color="#000000"><b>{{participant.statement}}</b></font></span
+            ><span style="color: {{participant.color}}"
+              ><b>{{participant.statement}}</b></span></span
           >
         </div>
-        border: 2px solid rgb(0,32,91);
       </div>
 
       {% endfor %}
