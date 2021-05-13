@@ -79,6 +79,7 @@
       {% assign column_key = "column" | append: i %} {% for participant in
       site.data[column_key] %}
       <div class="card">
+          <span style="background-color:  {{participant.color}}
         <b id="docs-internal-guid-6bf40e90-7fff-0f29-266c-2611e78b6b93"
           ><img
             class="photo"
@@ -101,6 +102,7 @@
             ><span style="color: {{participant.color}}"
               ><b>{{participant.statement}}</b></span></span
           >
+          </span>
         </div>
       </div>
 
