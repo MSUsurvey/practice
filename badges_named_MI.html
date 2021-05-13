@@ -57,19 +57,14 @@
   </style>
 
   <div class="toptitle">
-    <span style="font-size: 22px"
-      ><font color="#000000"
-        >Overall responses: </font
-      ></span
-    ><br>
     <img
       class="chart"
-      src="{{site.url}}images/barchart.JPG"
+      src="{{site.url}}images/prior_responses.JPG" alt="77% already vaccinated; 13% intend to; 7% have not decided; 3% are not interested."
   />
     <br><br>
     <span style="font-size: 22px"
       ><font color="#000000"
-        >Selected responses shown below.</font
+        >Featured Respondents</font
       ></span
     >
   </div>
@@ -91,7 +86,7 @@
         <div>
           <span style="font-size: 16px"
             ><b
-              ><span style="color: rbg(0,0,0)"
+              ><span style="color: {{participant.color2}}"
                 ><strong>{{participant.first_name}}</strong></span
               ></b
             ></span
