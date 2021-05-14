@@ -36,6 +36,12 @@
       border: 1px solid rgb(0, 0, 0);
       text-align: center;
       margin: 3px 0 3px 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .name {
+      flex: 1;
     }
 
     .caption {
@@ -59,13 +65,12 @@
   <div class="toptitle">
     <img
       class="chart"
-      src="{{site.url}}images/prior_responses.JPG" alt="77% already vaccinated; 13% intend to; 7% have not decided; 3% are not interested."
-  />
-    <br><br>
+      src="{{site.url}}images/prior_responses.JPG"
+      alt="77% already vaccinated; 13% intend to; 7% have not decided; 3% are not interested."
+    />
+    <br /><br />
     <span style="font-size: 22px"
-      ><font color="#000000"
-        >Featured Respondents</font
-      ></span
+      ><font color="#000000">Featured Respondents</font></span
     >
   </div>
 
@@ -83,10 +88,10 @@
             vspace="12"
             width="115"
         /></b>
-        <div>
+        <div class="name">
           <span style="font-size: 16px"
             ><b
-              ><span style="color: rgb(0,0,0)"
+              ><span style="color: rgb(0, 0, 0)"
                 ><strong>{{participant.first_name}}</strong></span
               ></b
             ></span
@@ -95,7 +100,8 @@
         <div class="caption" style="background: {{participant.color}}">
           <span style="font-size: 14.5px"
             ><span style="color: {{participant.color2}}"
-              ><b>{{participant.statement}}</b></span></span
+              ><b>{{participant.statement}}</b></span
+            ></span
           >
         </div>
       </div>
