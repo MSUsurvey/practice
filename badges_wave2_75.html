@@ -1,0 +1,122 @@
+---
+---
+
+<html>
+  <head>
+    <title>MSU Survey Results</title>
+  </head>
+
+  <style type="text/css">
+    body {
+      font-family: Trebuchet MS, Helvetica, sans-serif;
+    }
+
+    .flex-container {
+      display: flex;
+      padding: 0px;
+      justify-content: center;
+    }
+    .flex-container > div {
+      margin: 6px;
+    }
+    .toptitle {
+      margin: 5px;
+      text-align: center;
+    }
+
+    .column {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card {
+      width: 175px;
+      height: 235px;
+      background-color: #e6e8eb;
+      border: 1px solid rgb(0, 0, 0);
+      text-align: center;
+      margin: 3px 0 3px 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .name {
+      flex: 1;
+    }
+
+    .caption {
+      padding: 5px;
+    }
+
+    .photo {
+      max-width: 155px;
+      max-height: 150px;
+      width: auto;
+      height: auto;
+    }
+    .chart {
+      max-width: 1000px;
+      max-height: 250px;
+      width: auto;
+      height: auto;
+    }
+  </style>
+
+  <div class="toptitle">
+    <img
+      class="chart"
+      src="{{site.url}}images/prior_responses.JPG"
+      alt="77% already vaccinated; 13% intend to; 7% have not decided; 3% are not interested."
+    />
+    <br /><br />
+    <span style="font-size: 22px"
+      ><font color="#000000">Featured Respondents</font></span
+    >
+  </div>
+
+  <div class="flex-container">
+    {% for i in (1..5) %}
+    <div class="column">
+      {% assign column_key = "column" | append: i | append: "_wave2" %} {% for participant in
+      site.data[column_key] %}
+      <div class="card" style="border: 4px solid {{participant.color}}">
+        <b id="docs-internal-guid-6bf40e90-7fff-0f29-266c-2611e78b6b93"
+          ><img
+            class="photo"
+            height="150"
+            src="{{participant.image}}"
+            vspace="12"
+            width="115"
+        /></b>
+        <div class="name">
+          <span style="font-size: 16px"
+            ><b
+              ><span style="color: rgb(0, 0, 0)"
+                ><strong>{{participant.first_name}}</strong></span
+              ></b
+            ></span
+          >
+        </div>
+        <div class="caption" style="background: {{participant.color}}">
+          <span style="font-size: 14.5px"
+            ><span style="color: {{participant.color2}}"
+              ><b>{{participant.statement}}</b></span
+            ></span
+          >
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% endfor %}
+  </div>
+</html>
+
+<!--
+
+<div style="width: 175px; height: 300px; background-color: #DEEBF6; border: 1px solid rgb(0, 0, 0); text-align: center;"><b id="docs-internal-guid-6bf40e90-7fff-0f29-266c-2611e78b6b93"><img class="photo" height="150" src="INSERT_IMAGE" vspace="12" width="115"></b>
+<div><span style="font-family:Trebuchet MS,Helvetica,sans-serif;"><span style="font-size:16px;"><b><span style="color: rgb(0, 0, 0);"><strong>First</strong></span></b></span></span></div><div><span style="font-family:Trebuchet MS,Helvetica,sans-serif;"><span style="font-size:16px;"><b><span style="color: rgb(0, 0, 0);"><strong>Last</strong></span></b></span></span></div>
+<div><span style="font-family:Trebuchet MS,Helvetica,sans-serif;"><span style="font-size:19px;"><b id="docs-internal-guid-6594a1a5-7fff-bbf5-4f3b-4b27f53bfde0"><span style="color: rgb(0, 0, 0);"><strong>Points</strong>: </span><span id="pcount" style="color: rgb(0, 0, 0);">0</span></b><br>
+<b><span style="color: rgb(0, 0, 0);">Donation: $</span><span id="dcount" style="color: rgb(0, 0, 0);">0.00</span></b></span></span></div>
+<div><span style="font-family:Trebuchet MS,Helvetica,sans-serif;"><span style="font-size:19px;"><font color="#000000"><b>Rank: 1/27</b></font></span></span></div></div>
+
+-->
